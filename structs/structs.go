@@ -14,6 +14,7 @@ type Users struct {
 	Password      string
 	IdNotif       string
 	Gender        bool
+	Address       string
 }
 
 type ParamsCreateUser struct {
@@ -24,6 +25,7 @@ type ParamsCreateUser struct {
 	Username  string `json:"username" form:"username" binding:"required"`
 	Password  string `json:"password" form:"password" binding:"required"`
 	Gender    bool   `json:"gender" form:"gender"`
+	Address   string `json:"address" form:"address"`
 	CreatedAt string
 }
 
@@ -37,6 +39,7 @@ type ParamsUpdateUser struct {
 	Password      string `json:"password" form:"password" `
 	Gender        bool   `json:"gender" form:"gender" `
 	IdNotif       string `json:"id_notif" form:"id_notif"`
+	Address       string `json:"address" form:"address"`
 	UpdatedAt     string
 }
 
@@ -52,6 +55,7 @@ type DataGetUser struct {
 	Phone    string `json:"phone"`
 	Email    string `json:"email"`
 	Username string `json:"username"`
+	Address  string `json:"address"`
 	Gender   bool   `json:"gender"`
 }
 type ParamsUser struct {
@@ -65,6 +69,7 @@ type DataDetailUser struct {
 	Email     string `json:"email"`
 	Username  string `json:"username"`
 	Gender    bool   `json:"gender"`
+	Address   string `json:"address"`
 	CreatedAt string `json:"created_at"`
 }
 type ParamsLogin struct {

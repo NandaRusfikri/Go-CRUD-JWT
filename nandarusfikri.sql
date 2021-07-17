@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 17, 2021 at 04:14 PM
+-- Generation Time: Jul 17, 2021 at 04:28 PM
 -- Server version: 10.4.17-MariaDB
 -- PHP Version: 8.0.2
 
@@ -39,17 +39,18 @@ CREATE TABLE `users` (
   `username` varchar(255) DEFAULT NULL,
   `password` varchar(255) DEFAULT NULL,
   `id_notif` varchar(255) DEFAULT NULL,
-  `gender` tinyint(1) DEFAULT NULL
+  `gender` tinyint(1) DEFAULT NULL,
+  `address` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `users`
 --
 
-INSERT INTO `users` (`id`, `created_at`, `updated_at`, `deleted_at`, `name`, `phone`, `email`, `email_verified`, `username`, `password`, `id_notif`, `gender`) VALUES
-(1, '2021-07-17 13:37:20', '2021-07-17 13:40:08', NULL, 'nandarusfikri', '123456', 'nanda@nanda.com', NULL, 'bebek', 'bebek', NULL, 0),
-(2, '2021-07-17 13:40:39', NULL, '2021-07-17 13:41:44', 'kucing', '12345678', 'kucing@kucing.com', NULL, 'kucing', 'kucing', NULL, 0),
-(3, '2021-07-17 13:52:28', NULL, NULL, 'kucing', '12345678', 'kucing@kucing.com', NULL, 'kucing', 'kucing', NULL, 0);
+INSERT INTO `users` (`id`, `created_at`, `updated_at`, `deleted_at`, `name`, `phone`, `email`, `email_verified`, `username`, `password`, `id_notif`, `gender`, `address`) VALUES
+(1, '2021-07-17 13:37:20', '2021-07-17 14:28:01', NULL, 'nandarusfikri', '123456', 'nanda@nanda.com', NULL, 'bebek', 'bebek', NULL, 0, 'Tebet Jakarta Selatan'),
+(2, '2021-07-17 13:40:39', NULL, '2021-07-17 13:41:44', 'kucing', '12345678', 'kucing@kucing.com', NULL, 'kucing', 'kucing', NULL, 0, NULL),
+(3, '2021-07-17 13:52:28', NULL, NULL, 'kucing', '12345678', 'kucing@kucing.com', NULL, 'kucing', 'kucing', NULL, 0, NULL);
 
 --
 -- Indexes for dumped tables
